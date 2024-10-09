@@ -1,0 +1,158 @@
+.header{
+  height:55px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:100;
+  background-color: white;
+  border-bottom-color:rgb(230, 227, 227);
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+}
+.searchbar{
+  flex:1;
+  font-size:18px;
+  height:40px;
+  border-width:1px;
+  border-style:solid;
+  border-color:rgb(197, 194, 194);
+  border-radius:3px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  box-shadow:inset 1px 2px 3px rgba(0,0,0,0.05);
+  width:0;
+}
+.searchbar::placeholder{
+  padding-left:15px;
+  color:rgb(197, 194, 194);
+  font-size:16px;
+  font-family:roboto;
+  font-weight:400;
+}
+.search-button{
+  height:40px;
+  background-color:rgb(247, 247, 247);
+  border-width:1px;
+  border-style:solid;
+  border-color:rgb(204, 204, 204);
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  margin-left:-1px;
+  margin-right:10px;
+}
+/*creatin .search-button once again to style tooltip*/
+.search-button,.voice-search-button,.upload-button,
+.apps-button,.notification-bar
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.search-button .tooltip,.voice-search-button .tooltip,
+.upload-button .tooltip,.apps-button .tooltip,
+.notification-bar .tooltip{
+  position:absolute;
+  background-color:gray;
+  color:white;
+  padding-top:9px;
+  padding-bottom:9px;
+  padding-left:9px;
+  padding-right:9px;
+  font-size:12px;
+  border-radius:2px;
+  bottom:-45px;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity 0.15s;
+  white-space: nowrap;
+  font-family:Roboto,Arial;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-button:hover .tooltip,.apps-button:hover .tooltip,
+.notification-bar:hover .tooltip{
+  opacity:1;
+}
+.voice-search-button{
+  height:40px;
+  width:40px;
+  border-radius:20px;
+  border:none;
+  background-color:rgb(248, 248, 248);
+}
+.voice{
+  height:22px;
+   
+}
+.search{
+  height:24px;
+  width:24px;
+  margin-left:12px;
+  margin-right:12px;
+}
+.mid-section{
+  display:flex;
+  flex:1;
+  margin-left:70px;
+  margin-right:35px;
+  max-width:500px;
+  align-items:center;
+}
+.left-section{
+  display:flex;
+  align-items:center;
+}
+.right-section{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:180px;
+  margin-right:24px;
+  flex-shrink:0;
+}
+.hamburger{
+  height:24px;
+  margin-left:20px;
+  margin-right:20px;
+}
+.youtubelogo{
+  height:20px;
+}
+
+.a{
+  height: 25px;
+  /* margin-left:70px; */
+  
+}
+.b{
+  height:25px;
+  
+}
+.c{
+  height:25px;
+}
+.d{
+  height:32px;
+}
+.notification-bar{
+  position:relative;
+}
+.notification-style{
+  color:white;
+  background-color:rgba(201, 3, 3, 0.877);
+  top:-3px;
+  right:-4px;
+  position:absolute;
+  padding-left:6px;
+  padding-right:6px;
+  padding-top:3px;
+  padding-bottom:3px;
+  font-size:9px;
+  border-radius:20px;
+  
+}
